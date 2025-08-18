@@ -11,11 +11,11 @@ const { initializeSocket } = require("./socket");
 const app = express();
 connectDB();
 
-const allowedOrigins = ["https://talkrio.vercel.app"];
 app.use(cors({
-  origin: allowedOrigins,
+  origin: "https://talkrio.vercel.app",
   credentials: true,
 }));
+
 
 app.use(express.json());
 const server = http.createServer(app);

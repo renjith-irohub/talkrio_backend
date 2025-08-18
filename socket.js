@@ -32,7 +32,7 @@ const voiceSchema = Joi.object({
 });
 
 const initializeSocket = (server) => {
-  const corsOrigin = process.env.FRONTEND_URL || "http://localhost:5173";
+  const corsOrigin = process.env.FRONTEND_URL;
   io = new Server(server, {
     cors: {
       origin: corsOrigin,
