@@ -11,7 +11,7 @@ const { initializeSocket } = require("./socket");
 const app = express();
 connectDB();
 
-const allowedOrigins = ["http://localhost:5173"];
+const allowedOrigins = ["https://talkrio.vercel.app"];
 app.use(cors({
   origin: allowedOrigins,
   credentials: true,
