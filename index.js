@@ -12,7 +12,7 @@ const app = express();
 connectDB();
 
 app.use(cors({
-  origin: "https://talkrio.vercel.app",
+  origin: ["https://talkrio.vercel.app", "http://localhost:5173"],
   credentials: true,
 }));
 
